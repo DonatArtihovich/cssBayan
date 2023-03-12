@@ -71,3 +71,66 @@ body {
     align-self: center;
     opacity: 0;
 }
+
+.accordion__radio:checked~.accordion__item>.accordion__item-image {
+    margin-top: 0;
+    max-width: 0;
+    margin-bottom: 0;
+    opacity: 0;
+}
+
+.accordion__radio:checked~.accordion__item>.icon {
+    transform: none;
+}
+
+.accordion__item:hover>.accordion__item-image {
+    margin-top: 1vh;
+    max-width: 60%;
+    margin-bottom: 2vh;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.accordion__item:hover>.icon {
+    transform: rotate(45deg);
+    transition: 0.25s
+}
+
+.accordion__item:active {
+    color: blue;
+}
+
+.accordion__radio {
+    appearance: none;
+}
+
+.accordion__item:first-of-type>.accordion__item-image {
+    margin-top: 1vh;
+    max-width: 60%;
+    margin-bottom: 2vh;
+    opacity: 1;
+}
+
+.accordion__item:first-of-type>.icon {
+    transform: rotate(45deg);
+}
+
+.accordion__item:first-of-type {
+    color: black;
+}
+
+.accordion__radio:checked+.accordion__item>.accordion__item-image {
+    margin-top: 1vh;
+    max-width: 60%;
+    margin-bottom: 2vh;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.accordion__radio:checked+.accordion__item>.icon {
+    transform: rotate(45deg);
+}
+
+.accordion__radio:checked+.accordion__item {
+    color: black;
+}
