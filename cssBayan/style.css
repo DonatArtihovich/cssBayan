@@ -62,3 +62,12 @@ body {
     grid-area: image;
     align-self: center;
 }
+
+.icon {
+    max-width: 30%;
+    height: auto;
+    grid-area: icon;
+    justify-self: end;
+    align-self: center;
+    opacity: 0;
+}
