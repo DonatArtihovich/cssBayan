@@ -134,3 +134,7 @@ body {
 .accordion__radio:checked+.accordion__item {
     color: black;
 }
+
+.fix {
+    height: 50vh;
+}
