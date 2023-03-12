@@ -1,0 +1,64 @@
+html {
+    scrollbar-gutter: stable both-edges;
+}
+
+body {
+    background-color: bisque;
+}
+
+.accordion__header {
+    display: inline-block;
+    margin: 5vh auto 3vh;
+    color: black;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    margin: 0.5vh auto;
+    gap: 1vh;
+    color: blue;
+}
+
+.accordion:hover .icon {
+    opacity: 1;
+}
+
+.accordion:hover {
+    color: black;
+}
+
+.accordion__item {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "text text text text text icon"
+        "image image image image image image";
+    align-items: center;
+    border-top: 0.25vh solid rgb(179, 52, 52);
+    border-bottom: 0.25vh solid rgb(179, 52, 52);
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.accordion__item-text {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    grid-area: text;
+}
+
+.accordion__item-image {
+    max-width: 0;
+    height: auto;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    grid-area: image;
+    align-self: center;
+}
